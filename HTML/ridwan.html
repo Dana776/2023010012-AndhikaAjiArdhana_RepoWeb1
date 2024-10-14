@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahasiswa Politeknik Balekambang</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh; 
+            flex-direction: row;
+        }
+
+
+        .sidebar {
+            background-color: #f0f0f0;
+            width: 200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+        }
+
+
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .content {
+            padding: 20px;
+            flex-grow: 1; 
+            overflow-y: auto; 
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h3>List Nama Mahasiswa: </h3>
+        <ol>
+            <li><a href="ridwan.html">Muhammad Ridwan</a></li>
+            <li><a href="rizki.html">Muhammad Rizki</a></li>
+            <li><a href="yamin.html">Muhammad Yamin</a></li>
+        </ol>
+    </div>
+
+
+    <div class="content-area">
+        <div class="header">
+            <h1>POLITEKNIK BALEKAMBANG JEPARA <img src="assets/img/logo-kampus.png" alt="logo-kampus" width="50px" height="50px"></h1>
+        </div>
+
+        <div class="content">
+            <h2>Detail Mahasiswa</h2>
+            <img src="assets/img/ridwan.png" alt="ridwan">
+            <p>Nama: Muhammad Ridwan</p>
+            <p>Alamat: Gebog, Kudus</p>
+            <p>Deskripsi: Aku Adalah Anak Yang Rajin Menolong</p>
+            <p>Hobi : </p>
+            <ol>
+                <li>Bermain game</li>
+                <li>Musik</li>
+                <li>Bola</li>
+            </ol>
+            <p>Keahlian : </p>
+            <ol>
+                <li>Front End Programmer : HTML, CSS, SASS, VUEJS.</li>
+                <li>Bermain Piano</li>
+                <li>Memancing</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
