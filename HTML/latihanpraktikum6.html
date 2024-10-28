@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan HTML Lanjut</title>
+    <style>
+        .halaman-tabel{
+            background-color: bisque;
+        }
+        table{
+            width: 400px;
+            height: 200px;
+        }
+        table, th, td {
+            border: 2px solid crimson;
+            color: black;
+        }
+        .halaman-list{
+            background-color: rgb(225, 38, 154);
+        }
+        img {
+            width: 250px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div><h3>Latihan Tag Hyperlink Ke website berita</h3>
+        <a href="https://www.cnnindonesia.com/">Website CNN</a>
+    </div>
+    <hr>
+    <div>
+        <h1>Macam Macam tag Heading</h1>
+        <h1>Tag H1 - Andhika Aji Ardhana</h1>
+        <h2>Tag h2 - Andhika Aji Ardhana</h2>
+        <h3>Tag h3 - Andhika Aji Ardhana</h3>
+        <h4>Tag h4 - Andhika Aji Ardhana</h4>
+        <h5>Tag h5 - Andhika Aji Ardhana</h5>
+        <h6>Tag h6 - Andhika Aji Ardhana</h6>
+        <hr>
+        <a href="https://www.tokopedia.com/" target="_blank"><h1> ke Website Tokopedia_Andhika Aji Ardhana</h1></a>
+        <a href="https://www.cnnindonesia.com/" target="_blank"><h2> ke Website CNN _ Andhika Aji Ardhana</h2></a>
+        <a href="https://www.klikindomaret.com/category/madu" target="_blank"> ke Website Indomaret_Andhika Aji Ardhana</a>
+        <hr>
+    </div>
+    <div>
+        <h1>Contoh Tag/Element Format text</h1>
+        <b>ini format format text tebal</b><br />
+        <i>ini format text italic</i><br />
+        <u>ini format text underline</u><br />
+        <em>ini format text em</em><br />
+        <small>ini format text small</small><br />
+        <strong>ini format text strong</strong><br />
+        <sub>ini format text sub</sub><br />
+        <sup>ini format text sup</sup><br />
+        <ins>ini format text ins</ins><br />
+        <del>ini format text del</del><br />
+        <mark>ini format text mark</mark>  
+        <hr>     
+    </div>
+    <div>
+        <p align="left">Visi Polibang</p>
+        <p align="right">Menjadi Politeknik yang Berdaya Saing Global, Professional dan beraqidah Ahlus Sunnah Wal Jama’ah</p>
+        <p align="center">Tempat Polibang</p>
+        <p align="justify">Polibang bertempat di jepara</p>
+    </div>
+    <hr>
+            <!-- HTML TABLE-->
+    <div class="halaman-tabel" align="center">
+        <h1>Table Nama Mahasiswa Polibang</h1>
+        <table>
+        <!--tr adalah table rows berfungsi sebagai pembuat baris baru-->
+        <tr>
+            <!--th ADALAH TABLE HEAD untuk judul utama tabel-->
+            <th>NIM</th>
+            <th>NAMA</th>
+            <th>Alamat</th>
+            <th>Prodi</th>
+        </tr>
+        <tr>
+            <td align="center">2023010012</td>
+            <td>Andhika Aji Ardhana</td>
+            <th>Kudus</th>
+            <th>RPL</th>
+        </tr>
+        <tr>
+            <td align="center">2023010011</td>
+            <td>Ananda Zaka</td>
+            <th>Demak</th>
+            <th>RPL</th>
+        </tr>
+        <tr>
+            <td align="center">20230100008</td>
+            <td>Ahmad Syukron</td>
+            <th>jepara</th>
+            <th>RPL</th>
+        </tr>
+        <tr>
+            <td align="center">20230100001</td>
+            <td>Adam Darmawan</td>
+            <th>Demak</th>
+            <th>RPL</th>
+        </tr>
+    </table>
+    </div>
+    <hr>
+        <div class="halaman-list">
+            <h1>TAG LIST</h1>
+            <!-- tag ol adalah ordered list yang berfungsi agar numbering nya ber-urutan -->
+             <h2>Warung Makan Bu Djatmi</h2>
+             <h3>Menu: (Ordered List)</h3>
+            <ol start="1" type="1">
+                <li>Bakso</li>
+                <li>Soto</li>
+                <li>Sate</li>
+            </ol>
+            <br>
+            <h3>Tambahan: (Unordered List)</h3>
+            <ul>
+                <li>Sate Jeroan</li>
+                <li>Krupuk Kulit</li>
+                <li>Perkedel</li>
+            </ul>
+            <h3>Minuman: (Definition list)</h3>
+            <DL>
+                <DT> Jus Alpukat </DT>
+                <DD> Jus alpukat dengan susu coklat </DD>
+                <DT> Soda Gembira </DT>
+                <DD> Susu Sirup + soda </DD>
+                <DT> Kelapa Kopyor </DT>
+                <DD> Kelapa Kopyor + sirup </DD>
+                </DL>
+               
+        </div>
+        <div>
+            <h1>FORM PENDAFTARAN MAHASISWA</h1>
+            <form action="" method="post">
+                <label for="nama">Nama Lengkap : </label>
+                <input type="text" name="nama" id="nama">
+                <br><br>
+                <label for="Alamat'">Alamat : </label>
+                <input type="text" name="Alamat" id="Alamat">
+                <br><br>
+                <label for="gender">Jenis Kelamin:</label>
+                <input type="radio" name="Laki-laki" id="Laki-laki"><label for="Laki-laki">Laki-laki</label>
+                <input type="radio" name="Perempuan" id="Perempuan"><label for="Perempuan">Perempuan</label>
+                <br><br>
+                <label for="Tanggal Lahir">Tanggal Lahir : </label>
+                <select name="bulan" id="bulan">
+                    <option>Pilih Bulan</option>
+                    <option value="2">January</option>
+                    <option value="3">Februari</option>
+                </select>
+                <select name="Pilih Tanggal" id="Pilih Tanggal">
+                    <option>Pilih Tanggal</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select name="Pilih Tahun" id="Pilih Tahun">
+                    <option>Pilih Tahun</option>
+                    <option value="1">2005</option>
+                    <option value="2">2006</option>
+                </select>
+                <br><br>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="hp">NO. HP : </label>
+                <input type="tel" name="hp" id="hp">
+                <br><br>
+                <label for="photo">Foto :</label>
+                <input type="file" name="photo" id="photo">
+                <br><br>
+                <label for="Asal'">Asal Sekolah : </label>
+                <input type="text" name="Asal" id="Asal">
+                <br><br>
+                <label for="alamatsekolah">Alamat Sekolah</label>
+                <textarea name="alamatsekolah" id="alamatsekolah" rows="4" cols="50"></textarea>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+        <div>
+            <h1>Latihan Tag Gambar</h1>
+            <img src="assets/img/dana.jpg" alt="aku">
+            <a href="halaman/praktikum6/zaka.html"><p>Ke Foto Ananda Zaka</p></a>
+        </div>
+        <div>
+            <h1>Belajar Tag Iframe Pada HTML Polibang</h1>
+            <iframe src="http://www.polibang.ac.id" height="200px
+           " width="900px"></iframe>           
+        </div>
+</body>
+</html>

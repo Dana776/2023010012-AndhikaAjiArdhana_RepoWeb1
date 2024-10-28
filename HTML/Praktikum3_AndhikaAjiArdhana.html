@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktikum 2 | Belajar Html</title>
+    <title>Praktikum 3 | Belajar Html</title>
+    <style>
+        .halaman-tabel{
+            background-color: bisque;
+        }
+        table{
+            width: 400px;
+            height: 200px;
+        }
+        table, th, td {
+            border: 2px solid crimson;
+            color: black;
+        }
+        .halaman-list{
+            background-color: rgb(225, 38, 154);
+        }
+    </style>
 </head>
 <body>
     <div style="background-color: aqua;">
@@ -15,7 +31,55 @@
     <div style="background-color: blue; color: red;" >
         <marquee behavior="" direction=""><h1>HAVE FUN ENJOYY!</h1></marquee>
     </div>
+    <!-- HTML TABLE-->
+    <div class="halaman-tabel" align="center">
+        <table>
+        <!--tr adalah table rows berfungsi sebagai pembuat baris baru-->
+        <tr>
+            <!--th ADALAH TABLE HEAD untuk judul utama tabel-->
+            <th>NO</th>
+            <th>NAMA</th>
+            <th>Prodi</th>
+        </tr>
+        <tr>
+            <td align="center">1</td>
+            <td>Yamine</td>
+            <th>Teknik Elektro</th>
+        </tr>
+        <tr>
+            <td align="center">2</td>
+            <td>Lamine</td>
+            <th>Teknik Informatika</th>
+        </tr>
+        <tr>
+            <td align="center">3</td>
+            <td>Amine</td>
+            <th>Teknik Perhutanan</th>
+        </tr>
+        <tr>
+            <td align="center">4</td>
+            <td>Armine</td>
+            <th>Teknik Perhutanan</th>
+        </tr>
+    </table>
+    </div>
 
-
+    <div class="halaman-list">
+        <!-- tag ol adalah ordered list yang berfungsi agar numbering nya ber-urutan -->
+         <h2>Warung Makan Bu Djatmi</h2>
+         <h3>Menu</h3>
+        <ol start="1" type="1">
+            <li>Bakso</li>
+            <li>Soto</li>
+            <li>Sate</li>
+        </ol>
+        <br>
+        <h3>Tambahan</h3>
+        <ul>
+            <li>Sate Jeroan</li>
+            <li>Krupuk Kulit</li>
+            <li>Perkedel</li>
+        </ul>
+    </div>
 </body>
 </html>
