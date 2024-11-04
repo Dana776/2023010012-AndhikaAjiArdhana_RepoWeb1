@@ -8,8 +8,21 @@ body {
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-rows: auto 50px 1fr auto;
+    /* 
+    grid-template-rows: auto 50px 1fr auto;:
+    auto: Baris pertama akan mengambil ruang sesuai dengan tinggi kontennya (header).
+    50px: Baris kedua (navigation bar) akan memiliki tinggi tetap 50px.
+    1fr: Baris ketiga (bagian utama/konten) akan mengambil ruang yang tersisa.
+    auto: Baris terakhir (footer) akan menyesuaikan ketinggiannya sesuai dengan konten.
+     */
     grid-template-columns: 1fr;
+    /* 
+    grid-template-columns: 1fr;: Hanya satu kolom yang mengisi seluruh lebar halaman
+     */
     min-height: 100vh;
+    /* 
+    min-height: 100vh;: Memastikan bahwa tinggi minimum halaman adalah 100% dari viewport, sehingga grid layout selalu memenuhi tinggi layar.
+    */
 }
 
 header {
@@ -28,7 +41,9 @@ header .logo img {
 
 
 nav ul {
+    /* Menghapus bullet point pada list. */
     list-style-type: none;
+    /* display: flex;: Menggunakan Flexbox untuk menyusun elemen <li> dalam <ul> secara horizontal. */
     display: flex;
     /* justify-content: space-around; */
     padding: 0;
@@ -44,12 +59,14 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 130px;
+    padding: 10px 130px;
     display: block;
+    /* display: block;: Membuat elemen <a> memanfaatkan seluruh lebar dari item <li> */
 }
 
 nav ul li + li {
-    border-left: 1px solid white;  
+    border-left: 1px solid white; 
+     /*Menambahkan garis pembatas putih di antara setiap item menu (<li>).  */
 }
 
 nav ul li a:hover {
@@ -59,8 +76,14 @@ nav ul li a:hover {
 
 .main {
     display: grid;
+    /* display: grid;: Bagian utama menggunakan Grid Layout. */
     grid-template-columns: 3fr 1fr;
+    /* grid-template-columns: 3fr 1fr;: Mengatur tata letak dua kolom:
+        Kolom pertama (konten utama) mengambil 3 bagian.
+        Kolom kedua (sidebar) mengambil 1 bagian.
+     */
     gap: 20px;
+    /*  Menambahkan jarak 20px antara kolom. */
     padding: 20px;
 }
 
@@ -78,9 +101,12 @@ nav ul li a:hover {
 }
 
 footer {
-    display: flex;                    
-    align-items: center;              
-    justify-content: center;          
+    display: flex;
+     /*display: flex;: Menggunakan Flexbox untuk memposisikan konten footer.*/
+    align-items: center; 
+    /*align-items: center;: Konten vertikal di tengah.  */
+    justify-content: center; 
+    /* justify-content: center;: Konten horizontal di tengah. */
     background-color: #333;          
     color: white;                     
     padding: 10px;                   
@@ -96,4 +122,11 @@ footer img {
 footer p {
     margin: 0;                        
 }
+/* 
+Grid layout pada body dan .main digunakan untuk membagi halaman menjadi beberapa bagian:
+header, navbar, konten, sidebar, dan footer, dengan penataan responsif.
+
+Flexbox digunakan dalam navbar dan footer untuk memastikan elemen di dalamnya diratakan secara horizontal.
+
+*/
 
