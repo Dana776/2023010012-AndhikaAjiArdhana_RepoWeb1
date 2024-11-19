@@ -221,3 +221,497 @@
     margin: 20px;
     background-color: pink;
 }
+/* ganti warna background */
+.container-background .heading1{
+    background-color: rgb(59, 158, 239);
+    text-align: center;
+    color: white;
+}
+.container-background .back-color{
+    background-color: rgb(255, 99, 71);
+    padding: 20px;
+}
+/* ganti warna font */
+.container-font .font1{
+    color: green;
+}
+.container-font .font2{
+    color: blue;
+}
+/* ganti warna border */
+.container-border .border1{
+    /* harus di kasih border style dahulu */
+    border-style: solid;
+    border-color: orangered;
+    padding: 20px;
+}
+.container-border .border2{
+    border-style: solid;
+    border-color: rgb(86, 157, 215);
+    padding: 20px;
+}
+.container-border .border3{
+    border-style: solid;
+    border-color: rgb(229, 31, 229);
+    padding: 20px;
+}
+
+/* folder cssbackground gambar-berulang.html */
+.body-gambar-berulang{
+    background-image: url("../image/berulang.jpeg");
+    background-repeat: repeat;
+}
+.container-gambar-berulang{
+    background-color: brown;
+}
+
+/* folder cssbackground gambar-tidak-berulang.html */
+.body-gambar-tidak-berulang{
+    background-image: url("../image/berulang.jpeg");
+    background-repeat: no-repeat;
+}
+.container-gambar-tidak-berulang{
+    background-color: brown;
+}
+
+/* folder webrpl */
+/* Container pembungkus */
+.container {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Sidebar */
+.container-info {
+    background-color: rgb(252, 252, 252);
+    border-radius: 40px 0px 0px 0px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    height: 315px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Beri bayangan agar lebih menarik */
+}
+/* artikel popular */
+.info-title {
+    padding: 8px;
+    background-color: rgb(6, 6, 137);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+/* List Styling di Container Info */
+.info-list {
+    color: black;
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.info-list li {
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+
+.info-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main wrapper untuk menahan header, navbar, and content */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Header */
+/* kita pakai teks supaya hd daripada gambar */
+.container-header {
+    background-color: rgb(0, 197, 167);
+    border-radius: 0px 0px 40px;
+    color: white;
+    padding: 30px;
+    width: 94%;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Beri bayangan agar lebih menarik */
+}
+
+.container-header .heading-text {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.container-header h4 {
+    text-align: right;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: navy;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Beri bayangan agar lebih menarik */
+}
+
+.navbar ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a{
+    padding: 23px;
+}
+
+/* Main Content Styling */
+.main-content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Beri bayangan agar lebih menarik */
+}
+
+.main-content h1 {
+    margin-top: 0;
+}
+
+.main-content p {
+    line-height: 1.6;
+}
+.galeri {
+    display: flex; /*agar bisa kesamping secara horizontal*/
+    justify-content: space-between;
+    margin-top: 0;
+    height: 400px;
+}
+
+.galeri img {
+    width: 30%; /* Ukuran gambar dikurangi menjadi 30% dari lebar kontainer */
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Beri bayangan agar lebih menarik */
+}
+
+/* Footer Styling */
+.footer-wrapper {
+    background-color: navy;
+    border-radius: 0px 0px 40px 40px; /* Border-radius untuk rounding */
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    width: 96%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Beri bayangan agar lebih menarik */
+    /*margin-left: 0, margin-bottom: 4px; blur: 8px; warna */
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Box-Model */
+.container{
+    display: flex;
+}
+.box-merah{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 20px;
+    background-color: red;
+}
+#aligator{
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+.box-pink{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid red;
+    margin: 20px;
+    background-color: pink;
+}
+#beruang{
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flexbox */
+.container-flexbox{
+    display:flex;
+    background-color: red;
+    flex-direction: row;
+}
+
+.container-flex-reverse{
+    display:flex;
+    background-color: red;
+    flex-direction: row-reverse;
+}
+
+.container-flex-column{
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+}
+.container-flex-column-reverse{
+    display: flex;
+    background-color: red;
+    flex-direction: column-reverse;
+}
+.yellow{
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Justify-Content */
+.container-justify-start{
+    display:flex;
+    background-color: red;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.container-justify-end{
+    display:flex;
+    background-color: red;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container-justify-center{
+    display:flex;
+    background-color: red;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-justify-space-around{
+    display:flex;
+    background-color: red;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-justify-space-between{
+    display:flex;
+    background-color: red;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item{
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Align-items */
+.container-align-item-stretch{
+    display: flex;
+    background-color: red;
+}
+
+.align{
+    flex: 1;
+    background-color: yellow;
+    min-height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: stretch;
+}
+
+.align4{
+    flex: 1;
+    background-color: yellow;
+    min-height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: stretch;
+}
+.align5{
+    flex: 1;
+    background-color: yellow;
+    min-height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: stretch;
+}
+
+.container-align-item-flex-start{
+    display: flex;
+    background-color: red;
+}
+
+.container-align-item-flex-start .align{
+    flex: 1;
+    background-color: yellow;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: flex-start;
+}
+.container-align-item-flex-start .align4{
+    flex: 1;
+    background-color: yellow;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: flex-start;
+}
+.container-align-item-flex-start .align5{
+    flex: 1;
+    background-color: yellow;
+    min-height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: flex-start;
+}
+
+.container-align-item-flex-end{
+    display: flex;
+    background-color: red;
+    align-items: baseline;
+    width: auto;
+}
+
+.container-align-item-flex-end .align{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: flex-end;
+}
+.container-align-item-flex-end .align4{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: flex-end;
+}
+.container-align-item-flex-end .align5{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    min-height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: flex-end;
+}
+/* aligment-center */
+.container-align-item-center{
+    display: flex;
+    background-color: red;
+    align-items: baseline;
+    width: auto;
+}
+
+.container-align-item-center .align{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+.container-align-item-center .align4{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+.container-align-item-center .align5{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    min-height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+/* align-items baseline */
+.container-align-item-baseline{
+    display: flex;
+    background-color: red;
+    align-items: center;
+    width: auto;
+}
+
+.container-align-item-baseline .align{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: baseline;
+}
+.container-align-item-baseline .align4{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: baseline;
+}
+.container-align-item-baseline .align5{
+    flex: 1;
+    display: flex;
+    background-color: yellow;
+    min-height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: baseline;
+}
