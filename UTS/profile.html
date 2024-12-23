@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="assets/css/style.css" class="css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="container-info">
+            <img style="width: 120px; height: 120px; margin-left: 25px;" src="assets/images/tacobell.png" alt="Logo Kampus">
+        </div>
+
+        <!-- Main content wrapper -->
+        <div class="main-wrapper">
+            <!-- Header -->
+            <div class="container-header">
+                <img src="assets/images/tacobell-header1.jpg" alt="tacobell-header" srcset="">
+            </div>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="picture.html">PICTURE</a></li>
+                    <li><a href="contacts">CONTACTS</a></li>
+                    <li><button class="login-btn" id="loginBtn">LOGIN</button></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="bio-section">
+                    <!-- Foto Profil -->
+                    <div class="bio-photo">
+                        <img src="assets/images/profile-photo.jpg" alt="Foto Profil">
+                    </div>
+                
+                    <!-- Informasi Biografi -->
+                    <div class="bio-info">
+                        <h2>Andhika Aji Ardhana</h2>
+                        <p><strong>NIM:</strong> 2023010012</p>
+                        <p><strong>Program Studi:</strong> Rekayasa Perangkat Lunak</p>
+                        <p><strong>Email:</strong> danaraja2006@gmail.com</p>
+                
+                        <!-- Tentang Diri -->
+                        <h3>Tentang Saya</h3>
+                        <p>
+                            Saya adalah mahasiswa Rekayasa Perangkat Lunak (RPL) di Politeknik Balekambang Jepara dengan minat untuk mencoba hal baru yang menarik.
+                            Saya selalu bersemangat untuk belajar teknologi baru dan memiliki pengalaman dalam membangun proyek berbasis web menggunakan HTML, CSS, dan JavaScript.
+                        </p>
+                
+                        <!-- Pengalaman -->
+                        <h3>Pengalaman</h3>
+                        <ul>
+                            <li>Magang di Software Development Esoftplay - Membangun situs web toko online</li>
+                        </ul>
+                
+                        <!-- Pendidikan -->
+                        <h3>Pendidikan</h3>
+                        <ul>
+                            <li>Politeknik Balekambang Jepara - Rekayasa Perangkat Lunak (2023 - Sekarang)</li>
+                            <li>SMK NU AL-HIDAYAH - Tenik Komputer Jaringan (2020-2023)</li>
+                            <li>MTS NU AL-HIDAYAH - (2020-2023)</li>
+                            <li>SDN 2 KARANGAMPEL - (2011-2017)</li>
+                        </ul>
+                    </div>
+
+                <!-- Pop-up Login -->
+                <div id="loginPopup" class="popup-overlay">
+                    <div class="popup-content">
+                        <span id="closeLogin" class="close-btn">&times;</span>
+                        <img style="width: 75px; height: 75px;" src="assets/images/tacobell.png" alt="tacobell">
+                        <h2>Login</h2>
+                        <form class="login-form">
+                            <div class="form-group">
+                                <label for="loginUsername">Username</label>
+                                <input type="text" id="loginUsername" placeholder="Masukkan Username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" placeholder="Masukkan Password" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                        <p>Belum punya akun? <a href="#" id="openRegister">Daftar di sini</a></p>
+                    </div>
+                </div>
+
+                <!-- Popup Registrasi -->
+                <div class="popup-overlay" id="registerPopup">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeRegister">&times;</span>
+                        <img style="width: 75px; height: 75px;" src="assets/images/tacobell.png" alt="tacobell">
+                        <h2>Registrasi</h2>
+                        <form id="registerForm" class="login-form">
+                            <div class="form-group">
+                                <label for="registerUsername">Username</label>
+                                <input type="text" id="registerUsername" placeholder="Masukkan Username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail">E-mail</label>
+                                <input type="email" id="registerEmail" placeholder="Masukkan email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword">Password</label>
+                                <input type="password" id="registerPassword" placeholder="Masukkan Password" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Daftar</button>
+                        </form>
+                        <p>Sudah punya akun? <a href="#" id="backToLogin">Kembali ke Login</a></p>
+                    </div>
+                </div>
+            </div>    
+            </div>
+            <div class="footer-wrapper">
+                <footer class="footer">
+                    <img src="assets/images/logo-kampus.png" alt="logo-polibang">
+                    <p>2023010012 - Andhika Aji Ardhana &copy; Copyright 2024.</p>
+                </footer>
+            </div>
+        </div>  
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>

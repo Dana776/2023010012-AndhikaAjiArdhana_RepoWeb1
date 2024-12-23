@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="assets/css/style.css" class="css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="container-info">
+            <img style="width: 120px; height: 120px; margin-left: 25px;" src="assets/images/tacobell.png" alt="tacobell">
+        </div>
+
+        <!-- Main content wrapper -->
+        <div class="main-wrapper">
+            <!-- Header -->
+            <div class="container-header">
+                <img src="assets/images/tacobell-header1.jpg" alt="tacobell-header" srcset="">
+            </div>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="picture.html">PICTURE</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                    <li><button class="login-btn" id="loginBtn">LOGIN</button></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <h1>Selamat Datang Di <strong style="color: purple;">TACO BELL!</strong></h1>
+                <p>Di Taco Bell, inovasi selalu ada dalam pikiran kami sejak Glen Bell mulai menyajikan taco di lokasi pertama pada tahun 1962 di Downey, California. Sejak saat itu, 
+                    kami telah berkembang menjadi merek gaya hidup yang berpusat pada budaya yang menyediakan makanan Meksiko yang inovatif, lezat, terjangkau dengan cita rasa yang berani.
+                     Kami tidak hanya menyediakan nilai terobosan, kami juga menawarkan bahan-bahan berkualitas dan merupakan restoran QSR pertama yang menawarkan item menu bersertifikat American Vegetarian Association (AVA).</p>
+                <p>Taco Bell dan organisasi waralaba kami mengoperasikan lebih dari 7.400 restoran yang melayani lebih dari 42 juta pelanggan setiap minggu di AS. Secara internasional,
+                     merek ini berkembang dengan lebih dari 1.100 restoran di lebih dari 30 negara di seluruh dunia.</p>
+                     <img style="width: 600px; height: 500px;" src="assets/images/tacobell-food.jpg" alt="tacobell-food">
+                <p>Kami menyediakan kesempatan pendidikan dan melayani masyarakat melalui organisasi nirlaba kami, Taco Bell Foundation, yang telah diberikan lebih dari $155 juta dalam bentuk hibah dan beasiswa,
+                     yang berfokus pada pendidikan dan kesiapan karier. Sejak tahun 2006, kami telah mendukung lebih dari 2.000 artis dan band dengan program Feed the Beat kami dengan memberikan musisi tur kartu hadiah Taco Bell 
+                     senilai $500 dan meningkatkan eksposur mereka melalui berbagai acara, iklan nasional, 
+                    dan media sosial... dan yang terbaru, meluncurkan program tersebut di Inggris!</p>
+                <p>
+                    Di luar restoran kami, penggemar dapat mengakses Taco Bell melalui aplikasi kami, tempat anggota yang mendapatkan hadiah dapat memperoleh makanan gratis, mendapatkan akses awal ke peluncuran produk baru,
+                     dan membuka lebih banyak lagi. Taco Bell menjadi QSR pertama yang meluncurkan aplikasi seluler di restoran kami di AS untuk pesanan melalui layanan pesan antar dan makan di tempat. 
+                     Taco Bell telah dinobatkan sebagai salah satu dari 100 Perusahaan Paling Berpengaruh versi TIME pada tahun 2023, dianugerahi Waralaba Tahun Ini versi Majalah Entrepreneur untuk tahun 2020, 2021, 2022, dan 2023, 
+                     serta ditampilkan dalam Perusahaan Paling Inovatif versi Fast Company pada tahun 2023 dan 2024.
+                </p>
+               <!-- Pop-up Login -->
+                <div id="loginPopup" class="popup-overlay">
+                    <div class="popup-content">
+                        <span id="closeLogin" class="close-btn">&times;</span>
+                        <img style="width: 75px; height: 75px;" src="assets/images/tacobell.png" alt="tacobell">
+                        <h2>Login</h2>
+                        <form class="login-form">
+                            <div class="form-group">
+                                <label for="loginUsername">Username</label>
+                                <input type="text" id="loginUsername" placeholder="Masukkan Username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" placeholder="Masukkan Password" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                        <p>Belum punya akun? <a href="#" id="openRegister">Daftar di sini</a></p>
+                    </div>
+                </div>
+
+                <!-- Popup Registrasi -->
+                <div class="popup-overlay" id="registerPopup">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeRegister">&times;</span>
+                        <img style="width: 75px; height: 75px;" src="assets/images/tacobell.png" alt="tacobell">
+                        <h2>Registrasi</h2>
+                        <form id="registerForm" class="login-form">
+                            <div class="form-group">
+                                <label for="registerUsername">Username</label>
+                                <input type="text" id="registerUsername" placeholder="Masukkan Username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail">E-mail</label>
+                                <input type="email" id="registerEmail" placeholder="Masukkan email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword">Password</label>
+                                <input type="password" id="registerPassword" placeholder="Masukkan Password" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Daftar</button>
+                        </form>
+                        <p>Sudah punya akun? <a href="#" id="backToLogin">Kembali ke Login</a></p>
+                    </div>
+                </div>
+        </div>  
+        <div class="footer-wrapper">
+            <footer class="footer">
+                <img src="assets/images/logo-kampus.png" alt="logo-polibang">
+                <p>2023010012 - Andhika Aji Ardhana &copy; Copyright 2024.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>

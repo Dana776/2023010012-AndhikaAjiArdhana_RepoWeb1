@@ -1,0 +1,370 @@
+/* folder webrpl */
+body{
+background-color: #F5F5DC;
+}
+h2{
+    color: #58217B;
+}
+/* Container utama untuk memastikan elemen berada di satu baris */
+.container {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 20px; /* Memberikan jarak antar elemen */
+}
+
+/* Sidebar tetap dengan lebar tetap */
+.container-info {
+    background-color: rgb(252, 252, 252);
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px; /* Pastikan sidebar memiliki lebar tetap */
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Menambah bayangan untuk estetika */
+}
+
+/* Main Wrapper agar mengisi ruang yang tersedia */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Agar sisa ruang diambil oleh main-wrapper */
+}
+
+
+/* Header */
+.container-header {
+    display: block; 
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Beri bayangan agar lebih menarik */
+}
+.container-header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+/* Navbar Styling */
+.navbar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: #FF8C00;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Beri bayangan agar lebih menarik */
+}
+
+.navbar ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a,
+.navbar ul li .login-btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: #FF8C00; /* Warna tombol/menu */
+    color: white; /* Teks putih */
+    padding: 15px 25px; /* Ruang di dalam tombol */
+    text-decoration: none; /* Hilangkan garis bawah */
+    border-radius: 5px; /* Rounding sudut */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Agar seperti link */
+    text-align: center;
+    cursor: pointer; /* Tanda panah berubah menjadi tangan */
+    border: none; /* Hilangkan border default button */
+}
+.navbar a{
+    padding: 23px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li .login-btn:hover {
+    background-color: white; /* Background putih saat hover */
+    color: #FF8C00; /* Warna teks oranye */
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none; /* Default disembunyikan */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparansi gelap */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #ffffff;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Tombol Close (X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(255, 126, 212);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: rgb(255, 105, 180);
+}
+
+/* Main Content Styling */
+.main-content {
+    background-color: #F4F4F4;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Beri bayangan agar lebih menarik */
+}
+
+.main-content h1 {
+    margin-top: 0;
+}
+
+.main-content p {
+    font-size: large;
+    line-height: 1.6;
+}
+
+/* Profile biografi css */
+/* Sesi Biografi */
+.bio-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Foto Profil */
+.bio-photo {
+    text-align: center; /* Foto di tengah */
+}
+
+.bio-photo img {
+    width: 200px;
+    height: 280px;
+    border-radius: 5%; /* Membuat foto menjadi lingkaran */
+    border: 3px solid rgb(255, 126, 212); /* Tambahkan border untuk estetika */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Informasi Biografi */
+.bio-info {
+    font-family: 'Arial', sans-serif;
+}
+
+.bio-info h2 {
+    color: rgb(100, 32, 170);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.bio-info h3 {
+    color: crimson;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.bio-info p {
+    line-height: 1.6;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.bio-info ul {
+    list-style: square;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.bio-info ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Halaman Picture */
+.logo-link {
+    display: flex; /*agar bisa kesamping secara horizontal*/
+    margin-left: 30px;
+    margin-right: 30px;
+}
+img.brand{
+    width: 175px;
+    height: 175px;
+    margin-left: 20px;
+}
+/* halaman contacts */
+/* Container untuk form kontak */
+.contact-form-container {
+    background-color: #FFFFFF;
+    border: solid 3px purple;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px; /* Maksimal lebar 600px */
+    margin: 0 auto; /* Menempatkan form di tengah */
+}
+
+/* Judul form */
+.contact-form-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(100, 32, 170); /* Warna ungu sesuai dengan tema */
+    margin-bottom: 20px;
+}
+
+/* Styling untuk label dan input */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    color: rgb(100, 32, 170); /* Warna teks ungu */
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgb(255, 126, 212); /* Fokus dengan warna pink terang */
+    outline: none;
+}
+
+/* Tombol Kirim */
+.submit-btn {
+    background-color: rgb(255, 126, 212); /* Warna pink terang */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(255, 105, 180); /* Warna pink lebih gelap saat hover */
+}
+
+/* Form styling */
+.login-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    font-size: 0.9rem;
+    color: rgb(100, 32, 170); /* Ungu */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: rgb(255, 126, 212); /* Fokus pink */
+    outline: none;
+}
+
+.login-form .submit-btn {
+    background-color: rgb(255, 126, 212); /* Tombol pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.login-form .submit-btn:hover {
+    background-color: rgb(255, 105, 180); /* Pink lebih gelap */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar */
+}
+
+/* Footer Styling */
+.footer-wrapper {
+    background-color: #58217B;
+    border-radius: 0px 0px 40px 40px; /* Border-radius untuk rounding */
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Elemen di tengah secara horizontal */
+    align-items: center; /* Elemen di tengah secara vertikal */
+    color: white;
+    width: 97%; /* Mengatur lebar footer menjadi 97% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Beri bayangan agar lebih menarik */
+    flex-direction: column; /* Menambahkan ini untuk memastikan elemen berada di bawah dalam layout vertikal */
+    text-align: center; /* Agar teks berada di tengah */
+    clear: both; /* Menghindari efek float dari elemen lain yang menghalangi footer */
+}
+
+
+/* Footer content yang menampung gambar dan teks */
+.footer {
+    display: flex;
+    flex-direction: row; /* Mengubah menjadi horizontal untuk gambar dan teks */
+    align-items: center; /* Untuk memusatkan gambar dan teks secara vertikal */
+    gap: 10px; /* Jarak antar elemen */
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0; /* Menghapus margin bawah agar gambar sejajar dengan teks */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 20px;
+}
+

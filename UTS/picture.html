@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands</title>
+    <link rel="stylesheet" href="assets/css/style.css" class="css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="container-info">
+            <img style="width: 120px; height: 120px; margin-left: 25px;" src="assets/images/tacobell.png" alt="Logo Kampus">
+        </div>
+
+        <!-- Main content wrapper -->
+        <div class="main-wrapper">
+            <!-- Header -->
+            <div class="container-header">
+                <img src="assets/images/tacobell-header1.jpg" alt="tacobell-header" srcset="">
+            </div>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="picture.html">PICTURE</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                    <li><button class="login-btn" id="loginBtn">LOGIN</button></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main-content">
+               <!-- Pop-up Login -->
+               <div id="loginPopup" class="popup-overlay">
+                <div class="popup-content">
+                    <span id="closeLogin" class="close-btn">&times;</span>
+                    <img style="width: 75px; height: 75px;" src="assets/images/tacobell.png" alt="tacobell">
+                    <h2>Login</h2>
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="loginUsername">Username</label>
+                            <input type="text" id="loginUsername" placeholder="Masukkan Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" placeholder="Masukkan Password" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+                    <p>Belum punya akun? <a href="#" id="openRegister">Daftar di sini</a></p>
+                </div>
+            </div>
+
+            <!-- Popup Registrasi -->
+            <div class="popup-overlay" id="registerPopup">
+                <div class="popup-content">
+                    <span class="close-btn" id="closeRegister">&times;</span>
+                    <img style="width: 75px; height: 75px;" src="assets/images/tacobell.png" alt="tacobell">
+                    <h2>Registrasi</h2>
+                    <form id="registerForm" class="login-form">
+                        <div class="form-group">
+                            <label for="registerUsername">Username</label>
+                            <input type="text" id="registerUsername" placeholder="Masukkan Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">E-mail</label>
+                            <input type="email" id="registerEmail" placeholder="Masukkan email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Password</label>
+                            <input type="password" id="registerPassword" placeholder="Masukkan Password" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Daftar</button>
+                    </form>
+                    <p>Sudah punya akun? <a href="#" id="backToLogin">Kembali ke Login</a></p>
+                </div>
+            </div>
+                <h1>Ini Adalah Link Ke Brand Kami Yang lainnya:</h1>
+                <div class="logo-link">
+                    <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/kfc" target="_blank"><img class="brand" src="assets/images/kfc.png" alt="kfc"></a>
+                    <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/pizza-hut" target="_blank"><img class="brand" src="assets/images/pizzahut.png" alt="pizzahut"></a>
+                    <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/habit-burger-and-grill" target="_blank"><img class="brand" src="assets/images/habit-burger.png" alt="habit-burger"></a>
+                </div>
+                <hr>
+                <h1>Ini Adalah Link Ke Sosial Media Kami :</h1>
+                <div class="logo-link">
+                    <a href="https://www.instagram.com/tacobell/" target="_blank"><img src="assets/images/instagram.png" alt="instagram" class="brand"></a>
+                    <a href="https://www.facebook.com/tacobell/?locale=id_ID" target="_blank"><img src="assets/images/facebook.png" alt="facebook" class="brand"></a>
+                    <a href="https://x.com/tacobell?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="assets/images/twitter.png" alt="twitter" class="brand"></a>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <footer class="footer">
+                    <img src="assets/images/logo-kampus.png" alt="logo-polibang">
+                    <p>2023010012 - Andhika Aji Ardhana &copy; Copyright 2024.</p>
+                </footer>
+            </div>
+            </div>
+        </div>  
+</body>
+<script src="assets/js/script.js"></script>
+</html>
