@@ -1,0 +1,62 @@
+<?php
+include '../../db.php';
+
+function uploadFile($file)
+{
+    $targetDir = "../../uploads/";
+    $fileName = basename($file["name"]);
+    $targetFilePath = $targetDir . $fileName;
+
+    // Pindahkan file ke folder uploads
+    if (move_uploaded_file($file["tmp_name"], $targetFilePath)) {
+        return $fileName; // Kembalikan nama file jika berhasil diunggah
+    } else {
+        return null; // Kembalikan null jika gagal
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $id = $_POST['id'];
+    
+    // Ambil gambar saat ini dari database
+    $stmt = $koneksi->prepare("SELECT gambar1, gambar2, gambar3, gambar4 FROM about WHERE id = ?");
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $stmt->bind_result($gambar1_current, $gambar2_current, $gambar3_current, $gambar4_current);
+    $stmt->fetch();
+    $stmt->close();
+
+    // Upload gambar dan gunakan gambar lama jika tidak ada gambar baru
+    $gambar1 = !empty($_FILES['gambar1']['name']) ? uploadFile($_FILES['gambar1']) : $gambar1_current;
+    $gambar2 = !empty($_FILES['gambar2']['name']) ? uploadFile($_FILES['gambar2']) : $gambar2_current;
+    $gambar3 = !empty($_FILES['gambar3']['name']) ? uploadFile($_FILES['gambar3']) : $gambar3_current;
+    $gambar4 = !empty($_FILES['gambar4']['name']) ? uploadFile($_FILES['gambar4']) : $gambar4_current;
+
+    $ket1 = $_POST['ket1'];
+    $ket2 = $_POST['ket2'];
+    $pengalaman = $_POST['pengalaman'];
+    $booking = $_POST['booking'];
+
+    // Memastikan semua gambar berhasil diunggah atau menggunakan gambar lama
+    if ($gambar1 && $gambar2 && $gambar3 && $gambar4) {
+        // File berhasil diunggah, lakukan pembaruan
+        $stmt = $koneksi->prepare("UPDATE about SET gambar1 = ?, gambar2 = ?, gambar3 = ?, gambar4 = ?, ket1 = ?, ket2 = ?, pengalaman = ?, booking = ? WHERE id = ?");
+        $stmt->bind_param("ssssssiii", $gambar1, $gambar2, $gambar3, $gambar4, $ket1, $ket2, $pengalaman, $booking, $id);
+
+        if ($stmt->execute()) {
+            // Redirect ke halaman tabel dengan pesan berhasil
+            header("Location: ../../tb_about.php?update-berhasil=1");
+            exit();
+        } else {
+            // Redirect ke halaman tabel dengan pesan gagal
+            header("Location: ../../tb_about.php?update-gagal=1");
+            exit();
+        }
+        $stmt->close();
+    } else {
+        // Jika file gagal diunggah
+        header("Location: ../../tb_about.php?gagal=1");
+        exit();
+    }
+}
+?>
